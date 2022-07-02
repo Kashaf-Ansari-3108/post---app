@@ -1,0 +1,31 @@
+
+.inputBox{
+   width:50% !important ;
+}
+
+.postBox .card{
+    border: 2px solid red;
+    margin: 10px;
+    width:100%;
+    box-shadow: -3px 0px 5px 12px rgba(235,115,115,0.75);
+    -webkit-box-shadow: -3px 0px 5px 12px rgba(235,115,115,0.75);
+    -moz-box-shadow: -3px 0px 5px 12px rgba(235,115,115,0.75);
+}
+button{
+    float: right;
+}
+.card-header{
+    font-size: 20px;
+    border-bottom: 2px dashed rebeccapurple !important;
+    color: blueviolet !important;
+    font-weight: bold !important;
+    font-family: Georgia, 'Times New Roman', Times, serif !important;
+    text-transform: uppercase;
+
+}
+
+@media only screen and (max-width:1000px){
+    .inputBox{
+        width:100% !important ;
+    }
+}
