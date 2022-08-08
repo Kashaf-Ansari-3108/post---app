@@ -31,11 +31,9 @@
                             </div>
                         </li>
                         <li class="list-group-item">
-                            <div class="input-group input-group-lg">
-                                <span class="input-group-text" id="inputGroup-sizing-lg">Image URL</span>
-                                <input id="img" type="text" class="form-control" aria-label="Sizing example input"
-                                    aria-describedby="inputGroup-sizing-lg">
-                            </div>
+                            <div>
+                                <input onchange="loadFile(event)" accept="image/*" class="form-control form-control-lg" id="img" type="file">
+                              </div>
                         </li>
                         <li class="list-group-item">
                             <div class="input-group">

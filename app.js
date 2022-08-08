@@ -1,15 +1,18 @@
+let imgSrc;
+var loadFile = function(event) {
+	imgSrc = URL.createObjectURL(event.target.files[0]);
+}
 let allPost = []
 function onPost(){
  let name = document.getElementById("name")
  let title = document.getElementById("title")
- let img = document.getElementById("img")
- let des = document.getElementById("des")
+let des = document.getElementById("des")
  let display = document.getElementById("display")
- if(name.value !== "" && title.value !== ""  && img.value !== ""  && des.value !== "" ){
+ if(name.value !== "" && title.value !== ""  && des.value !== "" ){
     let obj = {
         name:name.value,
         title:title.value,
-        img:img.value,
+        img:imgSrc,
         des:des.value
     }
     allPost.unshift(obj)
